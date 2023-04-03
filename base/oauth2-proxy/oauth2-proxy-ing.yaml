@@ -1,5 +1,5 @@
 ---
-#  # Adapter les valeurs pour le domaine caas.fr)
+# Adapter les valeurs pour le domaine caas.fr)
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
