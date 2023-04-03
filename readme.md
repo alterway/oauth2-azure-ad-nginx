@@ -1,7 +1,7 @@
 # Utilisation d'oauth2 avec NGinx,oauth2-proxy, Azure AD pour donner l'accès à une application web
 
 
-Repo pour le billet de blog : [https://blog.alterway.fr/utilisation-doauth2-avec-nginxoauth2-proxy-azure-ad-pour-donner-lacces-a-une-application-web.html](https://blog.alterway.fr/utilisation-doauth2-avec-nginxoauth2-proxy-azure-ad-pour-donner-lacces-a-une-application-web.html)
+Repo pour le billet de blog : [https://blog.alterway.fr/utilisation-doauth2-avec-nginx-oauth2-proxy-azure-ad-pour-donner-un-acces-securise-a-une-application-web.html](https://blog.alterway.fr/utilisation-doauth2-avec-nginx-oauth2-proxy-azure-ad-pour-donner-un-acces-securise-a-une-application-web.html)
 
 
 ## Pré-requis
