@@ -1,0 +1,29 @@
+---
+#  # Adapter les valeurs pour le domaine caas.fr)
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    cert-manager.io/cluster-issuer: letsencrypt
+    nginx.ingress.kubernetes.io/proxy-buffer-size: "32k"
+    nginx.ingress.kubernetes.io/proxy-buffers-number: '4'
+  name: oauth2-proxy-ing
+  
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - auth.caas.fr
+    secretName: auth.caas.fr-tls
+  rules:
+    - host: auth.caas.fr
+      http:
+        paths:
+          - path: /oauth2
+            pathType: Prefix
+            backend:
+              service:
+                name: oauth2-proxy-svc
+                port:
+                  number: 4180

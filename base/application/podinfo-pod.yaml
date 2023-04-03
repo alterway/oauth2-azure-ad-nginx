@@ -1,0 +1,23 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: podinfo
+  name: podinfo
+  
+spec:
+  containers:
+  - image: ghcr.io/stefanprodan/podinfo:6.3.5
+    imagePullPolicy: Always
+    name: podinfo
+    ports:
+    - name: http
+      containerPort: 9898
+      protocol: TCP
+    - name: http-metrics
+      containerPort: 9797
+      protocol: TCP
+    - name: grpc
+      containerPort: 9999
+      protocol: TCP
